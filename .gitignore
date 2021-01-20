@@ -7,5 +7,5 @@
 
 # sbt
 project/boot/
-project/plugins/project/
+project/project/
 target/
