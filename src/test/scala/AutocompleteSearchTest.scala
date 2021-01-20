@@ -31,7 +31,7 @@ class AutocompleteSearchTest extends AnyFlatSpec with should.Matchers with Befor
     word.children('a').get.children('b').get.children('$').get.isWord shouldBe true
   }
 
-  it should "return an empty tree when there is word is empty" in {
+  it should "return an empty tree when the word is empty" in {
     val word: TreeNode = new TreeNode
     AutocompleteSearch.addWord(new TreeNode, "", 0)
     word.isWord shouldBe false
